@@ -4,27 +4,26 @@ body {
 
 .container-fluid {
     padding: 0px 0px;
+    margin: 0px;
 }
 
 .navbarone {
     background-color: #72585e;
-    padding: 0;
+    padding: 0px;
 }
 
-.menucol {
-    margin-left: 15px;
+.navwomi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .magnifycol {
-    margin-left: 30px;
+    margin-top: 5px;
 }
 
-.searchcol {
-    padding: 0px 0px;
-}
-
-.womicol {
-    margin-left: 260px;
+.searchbar {
+    margin: 8px 0px 0px -25px
 }
 
 .colthreelements {

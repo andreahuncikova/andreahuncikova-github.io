@@ -12,75 +12,108 @@
 </head>
 <body style="background-image: url('img/backgroundfotka.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
 
-    <nav class="navbar navbarone">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-auto menucol">
-            <a class="nav-link threelements link-light" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+<header>
+
+  <nav class="navbar navbarone navbar-expand-lg">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="row w-100 justify-content-between">
+
+      <div class="col d-flex align-items-center justify-content-start">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link fourlinks link-light" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
               </svg>
             </a>
-          </div>
+          </li>
 
-          <div class="col-auto magnifycol">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 58 58">
-              <image id="magnify" width="58" height="58" opacity="0.53" xlink:href="data:image/png;base64,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"/>
-            </svg>            
-          </div>
+          <li class="nav-item magnifycol">
+            <a class="nav-link fourlinks link-light" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </a>
+          </li>
 
-          <div class="col text-center searchcol">
-            <form class="d-flex" role="search">
+          <li class="nav-item searchbar">
+            <form class="d-flex">
               <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width: 300px;">
             </form>
-          </div>
+          </li>
 
-          <div class="col womicol">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="60" viewBox="0 0 189 121">
-              <g id="Group_17" data-name="Group 17" transform="translate(-1955 1472)">
-                <text id="WOMI" transform="translate(1955 -1413)" fill="#fff" font-size="56" font-family="YoungSerif-Regular, Young Serif"><tspan x="0" y="0">WOMI</tspan></text>
-                <text id="WOMI-2" data-name="WOMI" transform="translate(1955 -1371)" fill="#fff" font-size="56" font-family="YoungSerif-Regular, Young Serif"><tspan x="0" y="0">WOMI</tspan></text>
-              </g>
-            </svg>
-          </div>
+        </ul>
+      </div>
 
-          <div class="col colthreelements d-flex justify-content-end">
-            <ul class="navbar-nav flex-row-reverse">
-              <li class="nav-item">
-                <a class="nav-link threelements link-light" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                  </svg>
-                </a>
-              </li>
+      <div class="col d-flex justify-content-center">
+        <ul class="navbar-nav">
 
-              <li class="nav-item">
-                <a class="nav-link threelements link-light" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-                  </svg>
-                </a>
-              </li>
+          <li class="nav-item">
+            <a class="nav-link fourlinks" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="60" viewBox="0 0 189 121">
+                <g id="Group_17" data-name="Group 17" transform="translate(-1955 1472)">
+                  <text id="WOMI" transform="translate(1955 -1413)" fill="#fff" font-size="56" font-family="YoungSerif-Regular, Young Serif">
+                    <tspan x="0" y="0">WOMI</tspan>
+                  </text>
+                  <text id="WOMI-2" data-name="WOMI" transform="translate(1955 -1371)" fill="#fff" font-size="56" font-family="YoungSerif-Regular, Young Serif">
+                    <tspan x="0" y="0">WOMI</tspan>
+                  </text>
+                </g>
+              </svg>
+            </a>
+          </li>
+                    
+        </ul>
+      </div>
 
-              <li class="nav-item">
-                <a class="nav-link threelements link-light" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                  </svg>
-                </a>
-              </li>
-              
-            </ul>
+      <div class="col d-flex align-items-center justify-content-end">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link fourlinks link-light" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fourlinks link-light" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+              </svg>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fourlinks link-light" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+              </svg>
+            </a>
+          </li>
+                    
+        </ul>
+      </div>
+
           </div>
         </div>
-      </div>
-    </nav>
+
+    </div>
+  </nav>
   
-    <nav class="navbartwo">
+  <nav class="navbartwo">
       <div class="container d-flex justify-content-center align-items-center">
         <ul class="nav">
           <li class="nav-item dropdown">
-            <a class="nav-link fs-5 fw-semibold linkforwomen fourlinks" href="#" id="womenDropdown" role="button" aria-haspopup="true" aria-expanded="false">WOMEN</a>
+            <a class="nav-link fs-4 fw-semibold linkforwomen fourlinks" href="#" id="womenDropdown" role="button" aria-haspopup="true" aria-expanded="false">WOMEN</a>
             <div class="dropdown-menu" aria-labelledby="womenDropdown">
               <a class="dropdown-item" href="#">Winter Clothes</a>
               <a class="dropdown-item" href="#">Dresses</a>
@@ -95,7 +128,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link fs-5 fw-semibold fourlinks" href="#" id="menDropdown" role="button" aria-haspopup="true" aria-expanded="false">MEN</a>
+            <a class="nav-link fs-4 fw-semibold fourlinks" href="#" id="menDropdown" role="button" aria-haspopup="true" aria-expanded="false">MEN</a>
             <div class="dropdown-menu" aria-labelledby="menDropdown">
               <a class="dropdown-item" href="#">Shirts</a>
               <a class="dropdown-item" href="#">T-Shirts and Polos</a>
@@ -110,7 +143,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link fs-5 fw-semibold fourlinks" href="#" id="kidsDropdown" role="button" aria-haspopup="true" aria-expanded="false">KIDS</a>
+            <a class="nav-link fs-4 fw-semibold fourlinks" href="#" id="kidsDropdown" role="button" aria-haspopup="true" aria-expanded="false">KIDS</a>
             <div class="dropdown-menu" aria-labelledby="kidsDropdown">
               <a class="dropdown-item text-dark" href="#">Baby Clothing</a>
               <a class="dropdown-item" href="#">Girls' Clothing</a>
@@ -125,7 +158,7 @@
            </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link fs-5 fw-semibold fourlinks" href="#" id="accessoriesDropdown" role="button" aria-haspopup="true" aria-expanded="false">ACCESSORIES</a>
+            <a class="nav-link fs-4 fw-semibold fourlinks" href="#" id="accessoriesDropdown" role="button" aria-haspopup="true" aria-expanded="false">ACCESSORIES</a>
             <div class="dropdown-menu" aria-labelledby="accessoriesDropdown">
               <a class="dropdown-item" href="#">Belts</a>
               <a class="dropdown-item" href="#">Hats and Caps</a>
@@ -139,6 +172,10 @@
         </ul>
       </div>
     </nav>
+
+</header>
+
+<main>
 
     <div class="container-fluid">
 
@@ -171,7 +208,41 @@
         </div>
       </div>
       
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="row rowone justify-content-center align-content-center container-fluid g-0">
+        <div class="card shadow" style="width: 19rem; height: 440px;">
+          <img src="img/jewellery.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center fs-4">
+              <a href="your-jewellery-link.html" class="text-decoration-underline card-text">JEWELLERY</a>
+            </p>
+          </div>
         </div>
+
+        <div class="card shadow" style="width: 19rem; height: 440px;">
+          <img src="img/sunglasses.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center fs-4">
+              <a href="your-sunglasses-link.html" class="text-decoration-underline card-text">SUNGLASSES</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card shadow" style="width: 19rem; height: 440px;">
+          <img src="img/handbags.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center fs-4">
+              <a href="your-handbags-link.html" class="text-decoration-underline card-text">HANDBAGS</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
 
         <div class="row rowbeforesamerow container-fluid g-0"></div>
 
@@ -184,25 +255,25 @@
 
         <div class="row siximagesrow justify-content-end g-0">
 
-          <div class="col g-0">         
+          <div class="col">         
             <img src="img/model 6.jpg" class="img-fluid imgsix" alt="...">
              </div>
 
-          <div class="col g-0">
+          <div class="col">
             <img src="img/model 7.jpg" class="img-fluid imgsix" alt="...">
           </div>
-          <div class="col g-0">         
+          <div class="col">         
             <img src="img/model 6.jpg" class="img-fluid imgsix" alt="...">
              </div>
 
-          <div class="col g-0">
+          <div class="col">
             <img src="img/model 7.jpg" class="img-fluid imgsix" alt="...">
           </div>
-          <div class="col g-0">         
+          <div class="col">         
             <img src="img/model 6.jpg" class="img-fluid imgsix" alt="...">
              </div>
 
-          <div class="col g-0">
+          <div class="col">
             <img src="img/model 7.jpg" class="img-fluid imgsix" alt="...">
           </div>
         </div>
@@ -212,9 +283,9 @@
 
         <div class="row samerow container-fluid g-0"></div>
         
-          <div class="row headlineandparagraph g-0 container-fluid">
+        <div class="row headlineandparagraph g-0 container-fluid">
 
-          <p class="align-content-center text-center discovertext">DISCOVER THE LATEST TRENDS</p>
+        <p class="align-content-center text-center discovertext">DISCOVER THE LATEST TRENDS</p>
         </div>
 
         <div class="row samerow container-fluid g-0 moveundertext"></div>
@@ -254,6 +325,9 @@
         </div>
 
         <div class="row samerow bg-light container-fluid g-0"></div>
+</main>
+
+<footer>
 
         <div class="row lastrow container-fluid g-0">
 
@@ -361,7 +435,7 @@
         </div>
         </div>
 
-        <div class="row rowbeforelastrow container-fluid"></div>
+        <div class="row rowbeforelastrow container-fluid g-0"></div>
 
         <div class="row lastlastrow bg-light container-fluid g-0">
             <div class="col-2 d-flex justify-content-center align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="168" height="100" viewBox="0 0 189 121">
@@ -378,7 +452,6 @@
                 <text id="WOMI-2" data-name="WOMI" transform="translate(1955 -1371)" fill="#934964" font-size="56" font-family="YoungSerif-Regular, Young Serif"><tspan x="0" y="0">WOMI</tspan></text>
               </g>
             </svg>
-
         </div>
 
             <div class="col-2 d-flex justify-content-center align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="168" height="100" viewBox="0 0 189 121">
@@ -387,7 +460,6 @@
                 <text id="WOMI-2" data-name="WOMI" transform="translate(1955 -1371)" fill="#934964" font-size="56" font-family="YoungSerif-Regular, Young Serif"><tspan x="0" y="0">WOMI</tspan></text>
               </g>
             </svg>
-
         </div>
 
             <div class="col-2 d-flex justify-content-center align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="168" height="100" viewBox="0 0 189 121">
@@ -396,7 +468,6 @@
                 <text id="WOMI-2" data-name="WOMI" transform="translate(1955 -1371)" fill="#934964" font-size="56" font-family="YoungSerif-Regular, Young Serif"><tspan x="0" y="0">WOMI</tspan></text>
               </g>
             </svg>
-
         </div>
 
             <div class="col-2 d-flex justify-content-center align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="168" height="100" viewBox="0 0 189 121">
@@ -405,7 +476,6 @@
                 <text id="WOMI-2" data-name="WOMI" transform="translate(1955 -1371)" fill="#934964" font-size="56" font-family="YoungSerif-Regular, Young Serif"><tspan x="0" y="0">WOMI</tspan></text>
               </g>
             </svg>
-
         </div>
 
             <div class="col-2 d-flex justify-content-center align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="168" height="100" viewBox="0 0 189 121">
@@ -414,13 +484,15 @@
                 <text id="WOMI-2" data-name="WOMI" transform="translate(1955 -1371)" fill="#934964" font-size="56" font-family="YoungSerif-Regular, Young Serif"><tspan x="0" y="0">WOMI</tspan></text>
               </g>
             </svg>
-
         </div>
+
     </div>
 
     <div class="row rowbeforelastrow container-fluid"></div>
         
     </div>
+
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
