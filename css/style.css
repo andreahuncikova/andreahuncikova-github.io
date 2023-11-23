@@ -26,10 +26,6 @@ body {
     margin: 8px 0px 0px -25px
 }
 
-.colthreelements {
-    margin-left: 500px;
-}
-
 .threelements:hover {
     transform: scale(1.02);
     transition: 0.2s;
@@ -50,7 +46,7 @@ body {
 }
 
 .rowone {
-    height: 730px;
+    height: 830px;
 }
 
 .card {
@@ -91,11 +87,11 @@ body {
 }
 
 .imgtwo{
-    height: 710px;
+    min-height: 760px;
 }
 
 .rowbeforesamerow {
-    height: 50px;
+    height: 150px;
     background-color: #8A6F76;
 }
 
@@ -105,7 +101,8 @@ body {
 }
 
 .rowbeforelastpictures {
-    height: 100px;
+    height: 150px;
+    background-color: #ffffff;
 }
 
 .lastlastrow {
@@ -129,10 +126,6 @@ body {
 .lastrow{
     background-color: #f8f9fa;
     height: 310px;
-}
-
-.imgsix {
-    height: 400px;
 }
 
 .texttounderline:hover {
